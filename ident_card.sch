@@ -1,0 +1,114 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_ST_STM32F3:STM32F303K8Tx U?
+U 1 1 61BA0092
+P 4000 2500
+F 0 "U?" H 3950 1411 50  0000 C CNN
+F 1 "STM32F303K8Tx" H 3950 1320 50  0000 C CNN
+F 2 "Package_QFP:LQFP-32_7x7mm_P0.8mm" H 3500 1600 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00092070.pdf" H 4000 2500 50  0001 C CNN
+	1    4000 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 3500 3900 3600
+Wire Wire Line
+	3900 3600 4000 3600
+Wire Wire Line
+	4000 3600 4000 3500
+Wire Wire Line
+	4000 3600 4000 3700
+Connection ~ 4000 3600
+$Comp
+L power:GND #PWR?
+U 1 1 61BA2B8E
+P 4000 3700
+F 0 "#PWR?" H 4000 3450 50  0001 C CNN
+F 1 "GND" H 4005 3527 50  0000 C CNN
+F 2 "" H 4000 3700 50  0001 C CNN
+F 3 "" H 4000 3700 50  0001 C CNN
+	1    4000 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Crystal Y?
+U 1 1 61BA3523
+P 2850 2350
+F 0 "Y?" V 2804 2481 50  0000 L CNN
+F 1 "Crystal" V 2895 2481 50  0000 L CNN
+F 2 "" H 2850 2350 50  0001 C CNN
+F 3 "~" H 2850 2350 50  0001 C CNN
+	1    2850 2350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3400 2500 2850 2500
+Wire Wire Line
+	3400 2400 3300 2400
+Wire Wire Line
+	3300 2400 3300 2200
+Wire Wire Line
+	3300 2200 2850 2200
+$Comp
+L Device:C C?
+U 1 1 61BA5D67
+P 2500 2500
+F 0 "C?" H 2615 2546 50  0000 L CNN
+F 1 "16pF" H 2615 2455 50  0000 L CNN
+F 2 "" H 2538 2350 50  0001 C CNN
+F 3 "~" H 2500 2500 50  0001 C CNN
+	1    2500 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 61BA6DDD
+P 2500 2200
+F 0 "C?" H 2615 2246 50  0000 L CNN
+F 1 "16pF" H 2615 2155 50  0000 L CNN
+F 2 "" H 2538 2050 50  0001 C CNN
+F 3 "~" H 2500 2200 50  0001 C CNN
+	1    2500 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61BA774F
+P 2250 2600
+F 0 "#PWR?" H 2250 2350 50  0001 C CNN
+F 1 "GND" H 2255 2427 50  0000 C CNN
+F 2 "" H 2250 2600 50  0001 C CNN
+F 3 "" H 2250 2600 50  0001 C CNN
+	1    2250 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 2200 2850 2200
+Connection ~ 2850 2200
+Wire Wire Line
+	2850 2500 2650 2500
+Connection ~ 2850 2500
+Wire Wire Line
+	2350 2200 2250 2200
+Wire Wire Line
+	2250 2200 2250 2500
+Wire Wire Line
+	2250 2500 2350 2500
+Wire Wire Line
+	2250 2500 2250 2600
+Connection ~ 2250 2500
+$EndSCHEMATC
