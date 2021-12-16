@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:ident_card-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -1476,4 +1475,7 @@ Wire Notes Line
 	2450 7350 1000 7350
 Wire Notes Line
 	1000 7350 1000 6100
+Wire Wire Line
+	3000 5600 3300 5600
+Connection ~ 3300 5600
 $EndSCHEMATC
